@@ -7,28 +7,15 @@ var stream = normalize("\n");
 
 ## normalize(format)
 
-Returns a duplex stream that normalizes the end of line characters to the
-desired format. `format` is a string that can be one of the following:
+Returns a [duplex stream](https://nodejs.org/api/stream.html#stream_class_stream_duplex)
+that normalizes the end of line characters to the desired format.
+`format` is a string that can be one of the following:
 
 - **"\n"**: Unix format (LF) / default
 - **"\r\n"**: Windows format (CR/LF)
 - **"\r"**: Old Mac format (CR)
 
 # Example
-
-```js
-var normalize = require("stream-normalize-eol");
-var stream = normalize();   // default is "\n"
-
-stream.write("First\r\nSecond\rThird");
-stream.end();
-
-stream.on("data", function(chunk) {
-  console.log(JSON.stringify(chunk.toString()));
-});
-
-// Prints "First\nSecond\nThird"
-```
 
 ```js
 var fs = require("fs");
@@ -45,9 +32,9 @@ stream.on("data", function(chunk) {
   console.log(JSON.stringify(chunk.toString()));
 });
 
-// Prints "Hello\r\nWorld"
+// prints "Hello\r\nWorld"
 ```
 
-# license
+# License
 
 MIT
