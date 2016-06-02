@@ -1,8 +1,14 @@
+# stream-normalize-eol
+
+A duplex stream that normalizes the end of line characters.
+
 # API
+
 ```js
 var normalize = require("stream-normalize-eol");
 var stream = normalize("\n");
-// Pipe input and output streams to `stream`.
+
+// pipe input and output streams to `stream`.
 ```
 
 ## normalize(format)

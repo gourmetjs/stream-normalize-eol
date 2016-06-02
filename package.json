@@ -1,6 +1,6 @@
 {
   "name": "stream-normalize-eol",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A duplex stream that normalizes the end of line characters",
   "author": "Max Jung <max@gourmetjs.com>",
   "license": "MIT",
@@ -8,6 +8,7 @@
   "keywords": [
     "stream",
     "eol",
+    "end of line",
     "line break",
     "crlf",
     "lf"
