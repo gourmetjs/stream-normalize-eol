@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "quotes": [2, "double", "avoid-escape"],
+    "no-underscore-dangle": 0,
+    "eol-last": 0,
+    "semi": 2,
+    "no-extra-semi": 2,
+    "semi-spacing": 2,
+    "no-mixed-requires": 0,
+    "curly": 0,
+    "no-use-before-define": 0,
+    "camelcase": 0,
+    "no-shadow": 0,
+    "no-return-assign": 0
+  }
+}
