@@ -21,6 +21,9 @@ that normalizes the end of line characters to the desired format.
 - **"\r\n"**: Windows format (CR/LF)
 - **"\r"**: Old Mac format (CR)
 
+Internally, this stream assumes that the input data is encoded as `utf8`.
+If you supply non-`utf8` encoded multi-byte data, it will not be processed correctly.
+
 # Example
 
 ```js
